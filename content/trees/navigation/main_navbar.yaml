@@ -1,0 +1,21 @@
+tree:
+  -
+    id: a569ae61-799b-4cdf-8239-a51964828bbe
+    title: Home
+    url: /
+  -
+    id: 776f495e-3837-4409-9272-e2f8ede3dfab
+    title: Speelgoed
+    url: /speelgoed
+  -
+    id: c27c91ff-3117-4c5b-9e3b-686429123dc2
+    title: Kantoorartikelen
+    url: /kantoorartikelen
+  -
+    id: dbfc6ccc-0257-4326-8fd2-62dff4e66bf2
+    title: Tijdschriften
+    url: /tijdschriften
+  -
+    id: 6bbf8d6b-74a5-4c2f-9bda-58c7389ddeba
+    title: 'Over Ons'
+    url: over-ons
