@@ -9,6 +9,7 @@ hero_image: test.jpg
 button_text: 'Lees meer'
 author: 146f4398-a96c-4451-93ee-7d4d945ec765
 updated_by: 146f4398-a96c-4451-93ee-7d4d945ec765
-updated_at: 1698478240
+updated_at: 1698528719
+main_header: 'Onze pakketpunten'
 ---
 Wij hebben meerdere pakket punten

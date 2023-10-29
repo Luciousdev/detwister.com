@@ -76,6 +76,19 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
+            handle: main_header
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Main Header'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: content
             field:
               type: markdown
@@ -163,6 +176,50 @@ tabs:
               type: assets
               display: 'Other slider images'
               icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Contact form'
+        fields:
+          -
+            handle: contact_form_header
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Contact Form Header'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: contact_form_text
+            field:
+              restrict: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              type: markdown
+              display: 'Contact Form Text'
+              icon: markdown
               listable: hidden
               instructions_position: above
               visibility: visible

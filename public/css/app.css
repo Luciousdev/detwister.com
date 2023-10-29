@@ -25,7 +25,7 @@ body {
     --color-black-500: #080a0c;
     --color-blue-600: #2463eb;
     --twister-brand-color: #58358c;
-    --twister-brand-color-hover: rgb(88, 53, 140, 0.5);
+    --twister-brand-color-hover: rgb(88, 53, 140, 0.9);
     --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -516,4 +516,68 @@ p {
         padding-top: 4vh;
         padding-bottom: 4vh;
     }
+}
+
+
+/* Contact form */
+
+.styled-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 15%;
+}
+
+.large-textarea {
+    flex: 1;
+    height: 24vh;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.large-textarea:focus {
+    border-color: var(--twister-brand-color);
+    outline: none;
+}
+
+.small-fields {
+    padding-left: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.small-fields input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.small-fields input:focus {
+    border-color: var(--twister-brand-color);
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: var(--twister-brand-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--twister-brand-color-hover);
 }
