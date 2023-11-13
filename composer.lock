@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88337a197bd9098ea3816ea068857e9c",
+    "content-hash": "f3f9d31c9252445dabcc013cb75df209",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -3349,6 +3349,65 @@
             "time": "2022-08-04T09:53:51+00:00"
         },
         {
+            "name": "mydnic/laravel-subscribers",
+            "version": "v1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mydnic/laravel-subscribers.git",
+                "reference": "d3270a97cbc65b4e756feb8491e51c660cdd64c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mydnic/laravel-subscribers/zipball/d3270a97cbc65b4e756feb8491e51c660cdd64c4",
+                "reference": "d3270a97cbc65b4e756feb8491e51c660cdd64c4",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=8.40.0",
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^6.17.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mydnic\\Subscribers\\SubscribersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mydnic\\Subscribers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clément Rigo",
+                    "email": "rigoclement@mydnic.be"
+                }
+            ],
+            "description": "Easily Manage Internal Newsletter Subscribers in Laravel",
+            "homepage": "https://github.com/mydnic/laravel-subscribers",
+            "keywords": [
+                "customer",
+                "feedback",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/mydnic/laravel-subscribers/issues",
+                "source": "https://github.com/mydnic/laravel-subscribers/tree/v1.9.0"
+            },
+            "time": "2023-07-09T11:22:42+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "2.71.0",
             "source": {
@@ -5186,16 +5245,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v4.30.0",
+            "version": "v4.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "c24b6985543c91655100f6b8a7f27074a45ad3b9"
+                "reference": "6a540f3b698f094539262ea33a0af91792706690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/c24b6985543c91655100f6b8a7f27074a45ad3b9",
-                "reference": "c24b6985543c91655100f6b8a7f27074a45ad3b9",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/6a540f3b698f094539262ea33a0af91792706690",
+                "reference": "6a540f3b698f094539262ea33a0af91792706690",
                 "shasum": ""
             },
             "require": {
@@ -5276,7 +5335,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v4.30.0"
+                "source": "https://github.com/statamic/cms/tree/v4.31.0"
             },
             "funding": [
                 {
@@ -5284,7 +5343,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-20T20:20:22+00:00"
+            "time": "2023-10-30T21:33:13+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -11168,5 +11227,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

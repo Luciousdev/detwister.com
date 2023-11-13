@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactformController;
+use App\Http\Controllers\NewsletterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,8 @@ use App\Http\Controllers\ContactformController;
 */
 
 Route::post("/contact-submit", [ContactformController::class,"submitForm"]);
+Route::post("/subscribe-newsletter", [NewsletterController::class,"submitNewsletterForm"]);
+
+Route::get("/test", function () {
+    return view('test');
+});

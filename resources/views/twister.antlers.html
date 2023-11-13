@@ -53,8 +53,7 @@
 
 <!-- MAIN CONTENT -->
 <section class="" id="main-content">
-    <div class="container extraSpaceContainer"></div>
-    <div class="container-fluid welcome-section" data-aos="fade-up" data-aos-delay="50">
+    <div class="container-fluid containerSpace welcome-section" data-aos="fade-up" data-aos-delay="50">
         <div class="row">
             <div class="col">
                 <h2 class="text-center">{{ main_header }}</h2>
@@ -69,8 +68,7 @@
 
 
     <!-- Image Carousel -->
-    <div class="extraSpaceContainer"></div>
-    <div class="container-fluid mainContentContainer" data-aos="fade-up" data-aos-delay="100">
+    <div class="container-fluid containerSpace" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
             <div class="col">
                 <h2 class="text-center">{{ section_header }}</h2>
@@ -96,8 +94,27 @@
         </div>
     </div>
 
+    <!-- NEWSLETTER -->
+    <div class="container-fluid containerSpace newsletterContainer" data-aos="fade-down" data-aos-offset="20" data-aos-delay="50">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Nieuwsbrief</h2><br>
+                <p>Wilt u op de hoogte blijven van onze aanbiedingen en nieuwe producten? Schrijf u dan in voor onze nieuwsbrief!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <form action="/subscribe-newsletter" method="post">
+                    <input type="text" name="email">
+                    <input type="submit" value="➔">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <!-- FOOTER -->
-    <div class="container-fluid footerContainer" data-aos="fade-down" data-aos-offset="-200" data-aos-delay="50">
+    <div class="container-fluid footerContainer" data-aos="fade-down" data-aos-offset="-200" data-aos-delay="100">
         <div class="row" style="padding-top: 50px;">
             <div class="col-md text-center my-auto">
                 <h3>Locatie & Contact:</h3>

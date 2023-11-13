@@ -1,5 +1,5 @@
-.extraSpaceContainer {
-    height: 10vh;
+.containerSpace {
+    margin-top: 10vh;
 }
 
 .welcome-section h2 {
