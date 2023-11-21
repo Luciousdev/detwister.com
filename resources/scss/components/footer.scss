@@ -1,0 +1,19 @@
+.footerContainer {
+    background-color: var(--twister-brand-color);
+    color: var(--color-white-200);
+}
+
+.footerContainer p {
+    color: var(--color-white-200);
+}
+
+.footerContainer a {
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .openingsTijden {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+}

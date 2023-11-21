@@ -1,20 +1,19 @@
 <!doctype html>
-<html lang="{{ site:short_locale }}">
+<html lang="">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="/js/app.js" defer></script>
-    <title>{{ title }}</title>
+    <title>{{ $page->title }}</title>
     <script src="/js/bootstrap.js"></script>
     <link rel="stylesheet" href="/css/aos.css">
     <script src="/js/aos.js"></script>
     <script src="/js/typed.js"></script>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/homepage.css">
-
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/init.css') }}">
 
     <meta name="title" content="De Twister" />
     <meta name="description" content="Welkom bij de twister! De beste kantoorvak-, boek- en speelgoedhandel in Amstelveen (Westwijk). Van postpunten zoals DHL en PostNL naar speelgoed, wij hebben het allemaal." />
@@ -41,7 +40,7 @@
 </body> -->
 
 <body>
-    {{ template_content }}
+    {{ $page->template_content }}
 </body>
 
 <script>

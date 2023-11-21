@@ -1,0 +1,25 @@
+.heroContainer {
+    width: 100%;
+    height: calc(100vh - 4.25rem);
+    margin-top: 4.25rem;
+    /* background-color: var(--color-black-500); */
+    background-color: var(--twister-brand-color);
+}
+
+.heroContainer p {
+    color: var(--color-white-200) !important;
+}
+
+.heroTextMain {
+    padding-left: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .heroTextMain {
+        padding-top: 40px;
+        padding-left: 15px;
+    }
+    .heroContainer {
+        height: calc(80vh - 4.25rem);
+    }
+}

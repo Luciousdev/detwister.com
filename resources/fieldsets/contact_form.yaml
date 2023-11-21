@@ -1,0 +1,29 @@
+title: 'Contact Form'
+fields:
+  -
+    handle: contact_form_header
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Contact Form Header'
+      icon: text
+      instructions: 'De titel voor het contact formulier'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: contact_form_text
+    field:
+      antlers: false
+      type: textarea
+      display: 'Contact form text'
+      icon: textarea
+      instructions: 'De tekst voor boven het contact formulier. Bijvoorbeeld een omschrijving.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

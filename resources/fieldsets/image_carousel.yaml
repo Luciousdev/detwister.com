@@ -1,0 +1,67 @@
+title: 'Image Carousel'
+fields:
+  -
+    handle: section_header
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Section Header'
+      icon: text
+      instructions: 'Koptekst van de carousel'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image_section_text
+    field:
+      antlers: false
+      type: textarea
+      display: 'Image Section Text'
+      icon: textarea
+      instructions: 'Tekst voor boven de carousel'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: first_slider_image
+    field:
+      max_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: 'First slider image'
+      icon: assets
+      instructions: 'Eerste plaatje van de carousel'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: other_slider_images
+    field:
+      max_files: 9
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: 'Other slider images'
+      icon: assets
+      instructions: 'De overige plaatjes in de carousel. MINIMAAL 1 EXTRA IMAGE.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

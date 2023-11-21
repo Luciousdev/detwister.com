@@ -15,7 +15,6 @@ tabs:
             handle: title
             field:
               type: text
-              required: true
               validate:
                 - required
           -
@@ -75,156 +74,30 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-          -
-            handle: main_header
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Main Header'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: content
-            field:
-              type: markdown
-              display: Content
-              localizable: true
-          -
-            handle: author
-            field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
+  text_field:
+    display: 'Text Field'
+    sections:
       -
-        display: 'Image Slider'
+        display: 'Nieuwe sectie'
         fields:
           -
-            handle: section_header
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Section Header'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: image_section_text
-            field:
-              restrict: false
-              buttons:
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - quote
-                - link
-                - image
-                - table
-              automatic_line_breaks: true
-              automatic_links: false
-              escape_markup: false
-              heading_anchors: false
-              smartypants: false
-              table_of_contents: false
-              antlers: false
-              type: markdown
-              display: 'Image Section Text'
-              icon: markdown
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: first_slider_image
-            field:
-              max_files: 1
-              mode: list
-              container: assets
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: 'First slider image'
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: other_slider_images
-            field:
-              mode: list
-              container: assets
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: 'Other slider images'
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+            import: text_content
+  image_carousel:
+    display: 'Image Carousel'
+    sections:
       -
-        display: 'Contact form'
+        display: 'Nieuwe sectie'
         fields:
           -
-            handle: contact_form_header
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Contact Form Header'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+            import: image_carousel
+  contact_form:
+    display: 'Contact Form'
+    sections:
+      -
+        display: 'Nieuwe sectie'
+        fields:
           -
-            handle: contact_form_text
-            field:
-              restrict: false
-              buttons:
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - quote
-                - link
-                - image
-                - table
-              automatic_line_breaks: true
-              automatic_links: false
-              escape_markup: false
-              heading_anchors: false
-              smartypants: false
-              table_of_contents: false
-              antlers: false
-              type: markdown
-              display: 'Contact Form Text'
-              icon: markdown
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+            import: contact_form
   sidebar:
     display: Sidebar
     sections:

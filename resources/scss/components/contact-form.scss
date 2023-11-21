@@ -1,0 +1,60 @@
+.styled-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 15%;
+}
+
+.large-textarea {
+    flex: 1;
+    height: 24vh;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.large-textarea:focus {
+    border-color: var(--twister-brand-color);
+    outline: none;
+}
+
+.small-fields {
+    padding-left: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.small-fields input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.small-fields input:focus {
+    border-color: var(--twister-brand-color);
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: var(--twister-brand-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--twister-brand-color-hover);
+}

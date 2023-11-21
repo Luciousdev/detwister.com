@@ -1,0 +1,29 @@
+title: 'Text content'
+fields:
+  -
+    handle: main_header
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Main Header'
+      icon: text
+      instructions: 'De koptekst van het tekstveld'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: content
+    field:
+      antlers: false
+      type: textarea
+      display: content
+      icon: textarea
+      instructions: 'De content. Alleen tekst is toegestaan. Plaatjes werken bijvoorbeeld niet.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
