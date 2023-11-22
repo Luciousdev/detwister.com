@@ -117,3 +117,11 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+  image_text:
+    display: 'Image Text'
+    sections:
+      -
+        display: 'Nieuwe sectie'
+        fields:
+          -
+            import: image-text

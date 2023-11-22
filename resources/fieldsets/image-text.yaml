@@ -1,0 +1,61 @@
+title: image-text
+fields:
+  -
+    handle: image_text_title
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Title
+      icon: text
+      instructions: 'Titel voor de image text veld'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image_text_text
+    field:
+      antlers: false
+      type: textarea
+      display: 'Text Field'
+      icon: textarea
+      instructions: 'Tekst veld'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image_text_image
+    field:
+      max_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Afbeelding
+      icon: assets
+      instructions: 'Afbeelding voor het image text veld.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image_text_image_to_the_right
+    field:
+      default: false
+      type: toggle
+      display: 'Image To The Right'
+      icon: toggle
+      instructions: 'Afbeelding rechts laten staan ipv links.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

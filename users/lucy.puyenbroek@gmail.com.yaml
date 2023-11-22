@@ -4,3 +4,6 @@ id: 146f4398-a96c-4451-93ee-7d4d945ec765
 password_hash: $2y$10$rde4/ZuTOcWJA/pnZSP70.gHwBN1uCkDW3u5ZKLuAvWSE3iOE09qq
 preferences:
   locale: nl
+  collections:
+    pages:
+      after_save: continue_editing

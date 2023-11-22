@@ -578,3 +578,47 @@ input[type=text]:hover {
   color: var(--color-white-200);
   font-size: 2rem;
 }
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+}
+.image-text img {
+  width: 100%;
+  height: auto;
+}
+.image-text__text-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+@media only screen and (min-width: 48rem) {
+  .image-text__text-container {
+    margin-top: 0px;
+  }
+}
+.image-text__text {
+  margin-top: 10px;
+}
+@media only screen and (min-width: 48rem) {
+  .image-text__text {
+    margin-top: 40px;
+  }
+}
+.image-text__button {
+  align-self: center;
+  margin-top: 55px;
+}
+@media only screen and (min-width: 48rem) {
+  .image-text__button {
+    margin-top: 50px;
+    align-self: flex-start;
+  }
+}
+.image-text--image-right .image-text__text-container {
+  padding-bottom: 35px;
+  padding-top: 0px;
+}

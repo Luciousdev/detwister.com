@@ -55,58 +55,67 @@
     </div>
 </section>
 
-<!-- MAIN CONTENT -->
-<section class="" id="main-content">
+<main>
+    <!-- MAIN CONTENT -->
+
     @if ($page->main_header)
-        <div class="container-fluid container-settings" data-aos="fade-up" data-aos-delay="50">
-            <div class="row">
-                <div class="col">
-                    <h2 class="">{{ $page->main_header }}</h2>
+    <section class="" id="main-content">
+            <div class="container-fluid container-settings" data-aos="fade-up" data-aos-delay="50">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="">{{ $page->main_header }}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-aos="fade-up" data-aos-delay="150">
+                        <p>
+                            {{ $page->content }}
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col" data-aos="fade-up" data-aos-delay="150">
-                    <p>
-                        {{ $page->content }}
-                    </p>
-                </div>
-            </div>
-        </div>
+        </section>
     @endif
 
+
+    <!-- Image Carousel -->
 
     @if ($page->section_header)
-        <!-- Image Carousel -->
-        <div class="container-fluid container-settings" data-aos="fade-up" data-aos-delay="100">
-            <div class="row">
-                <div class="col">
-                    <h2>{{ $page->section_header }}</h2>
+    <section>
+            <div class="container-fluid container-settings" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
+                    <div class="col">
+                        <h2>{{ $page->section_header }}</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>
-                        {{ $page->image_section_text }}
-                    </p>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{ $page->image_section_text }}
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel" data-carousel data-aos="fade-up" data-aos-delay="200">
-                <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-                <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="{{ $page->first_slider_image }}" alt="{{ $page->first_slider_image->alt }}">
-                    </li>
-                    @foreach ($page->other_slider_images as $image)
-                        <li class="slide">
-                            <img src="{{ $image->url }}" alt="{{ $image->alt }}">
+                <div class="carousel" data-carousel data-aos="fade-up" data-aos-delay="200">
+                    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="{{ $page->first_slider_image }}" alt="{{ $page->first_slider_image->alt }}">
                         </li>
-                    @endforeach
-                </ul>
+                        @foreach ($page->other_slider_images as $image)
+                            <li class="slide">
+                                <img src="{{ $image->url }}" alt="{{ $image->alt }}">
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
             </div>
-        </div>
+        </section>
     @endif
+
+
     <!-- NEWSLETTER -->
+
     {{-- <div class="container-fluid containerSpace newsletterContainer" data-aos="fade-down" data-aos-offset="20" data-aos-delay="50">
         <div class="row">
             <div class="col text-center">
@@ -125,33 +134,57 @@
         </div>
     </div> --}}
 
+
+    <!-- Contact Form -->
+
     @if($page->contact_form_header)
-        <!-- Contact Form -->
-        <div class="extraSpaceContainer"></div>
-        <div class="container-fluid mainContentContainer" data-aos="fade-up" data-aos-delay="100">
-            <div class="row">
-                <div class="col text-center">
-                    <h2>{{ $page->contact_form_header }}</h2>
-                    <p>{{ $page->contact_form_text }}</p>
+    <section>
+            <div class="extraSpaceContainer"></div>
+            <div class="container-fluid mainContentContainer" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>{{ $page->contact_form_header }}</h2>
+                        <p>{{ $page->contact_form_text }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form action="/contact-submit" method="post" id="contactForm" class="styled-form">
+                            <textarea name="contactText" form="contactForm" class="large-textarea" placeholder="Laat je creativiteit los." required></textarea>
+                            <div class="small-fields">
+                                @csrf
+                                <input type="text" name="title" placeholder="Onderwerp" required>
+                                <input type="email" name="email" placeholder="E-mail" required>
+                                <input type="text" name="name" placeholder="Je naam" required>
+                                <button type="submit">Verstuur</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+        </section>
+    @endif
+
+    {{-- Image Text --}}
+    @if($page->image_text_title)
+    <section class="image-text <?php if($page->image_text_image_to_the_right){ echo "image-text--image-right";} ?>">
+        <div class="container-fluid container-settings">
             <div class="row">
+                <div class="col-12 col-lg-6 <?php if($page->image_text_image_to_the_right){ echo "order-2";} ?>">
+                    <img src="{{ $page->image_text_image }}" alt="{{ $page->image_text_image->alt }}">
+                </div>
                 <div class="col">
-                    <form action="/contact-submit" method="post" id="contactForm" class="styled-form">
-                        <textarea name="contactText" form="contactForm" class="large-textarea" placeholder="Laat je creativiteit los." required></textarea>
-                        <div class="small-fields">
-                            @csrf
-                            <input type="text" name="title" placeholder="Onderwerp" required>
-                            <input type="email" name="email" placeholder="E-mail" required>
-                            <input type="text" name="name" placeholder="Je naam" required>
-                            <button type="submit">Verstuur</button>
-                        </div>
-                    </form>
+                    <div class="image-text__text-container">
+                        <h2><?php echo $page->image_text_title; ?></h2>
+                        <p class="image-text__text"><?php echo $page->image_text_text; ?></p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
     @endif
-</section>
+</main>
+
 <!-- FOOTER -->
 <div class="container-fluid footerContainer" data-aos="fade-down" data-aos-offset="-200" data-aos-delay="100">
     <div class="row" style="padding-top: 50px;">
