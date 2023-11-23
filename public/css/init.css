@@ -79,9 +79,13 @@ p {
   padding-bottom: 3%;
 }
 
+.container-settings:last-child {
+  padding-bottom: 7%;
+}
+
 .heroContainer {
   width: 100%;
-  height: calc(100vh - 4.25rem);
+  height: 100vh;
   margin-top: 4.25rem;
   /* background-color: var(--color-black-500); */
   background-color: var(--twister-brand-color);
@@ -89,6 +93,13 @@ p {
 
 .heroContainer p {
   color: var(--color-white-200) !important;
+}
+
+.heroContainer h1 {
+  font-weight: bold;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .heroTextMain {
@@ -101,7 +112,7 @@ p {
     padding-left: 15px;
   }
   .heroContainer {
-    height: calc(80vh - 4.25rem);
+    height: 100vh;
   }
 }
 /* MENU */

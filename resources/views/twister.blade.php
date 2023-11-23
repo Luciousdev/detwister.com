@@ -114,35 +114,13 @@
     @endif
 
 
-    <!-- NEWSLETTER -->
-
-    {{-- <div class="container-fluid containerSpace newsletterContainer" data-aos="fade-down" data-aos-offset="20" data-aos-delay="50">
-        <div class="row">
-            <div class="col text-center">
-                <h2>Nieuwsbrief</h2><br>
-                <p>Wilt u op de hoogte blijven van onze aanbiedingen en nieuwe producten? Schrijf u dan in voor onze nieuwsbrief!</p>
-            </div>
-            <div class="col text-center">
-                <p>Je ontvangt maximaal 1x per maand een mail van ons.</p>
-
-                <form action="/subscribe-newsletter" method="post">
-                    @csrf
-                    <input type="text" name="email" placeholder="email@email.com">
-                    <input type="submit" value="➔">
-                </form>
-            </div>
-        </div>
-    </div> --}}
-
-
     <!-- Contact Form -->
 
     @if($page->contact_form_header)
-    <section>
-            <div class="extraSpaceContainer"></div>
-            <div class="container-fluid mainContentContainer" data-aos="fade-up" data-aos-delay="100">
+        <section>
+            <div class="container-fluid container-settings" data-aos="fade-up" data-aos-delay="100">
                 <div class="row">
-                    <div class="col text-center">
+                    <div class="col">
                         <h2>{{ $page->contact_form_header }}</h2>
                         <p>{{ $page->contact_form_text }}</p>
                     </div>
@@ -160,7 +138,6 @@
                             </div>
                         </form>
                     </div>
-                </div>
             </div>
         </section>
     @endif
@@ -183,6 +160,27 @@
         </div>
     </section>
     @endif
+
+
+    <!-- NEWSLETTER -->
+
+    {{-- <div class="container-fluid containerSpace newsletterContainer" data-aos="fade-down" data-aos-offset="20" data-aos-delay="50">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Nieuwsbrief</h2><br>
+                <p>Wilt u op de hoogte blijven van onze aanbiedingen en nieuwe producten? Schrijf u dan in voor onze nieuwsbrief!</p>
+            </div>
+            <div class="col text-center">
+                <p>Je ontvangt maximaal 1x per maand een mail van ons.</p>
+
+                <form action="/subscribe-newsletter" method="post">
+                    @csrf
+                    <input type="text" name="email" placeholder="email@email.com">
+                    <input type="submit" value="➔">
+                </form>
+            </div>
+        </div>
+    </div> --}}
 </main>
 
 <!-- FOOTER -->
