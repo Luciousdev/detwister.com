@@ -16,12 +16,9 @@ use App\Http\Controllers\NewsletterController;
 */
 
 Route::post("/contact-submit", [ContactformController::class,"submitForm"]);
-Route::post("/subscribe-newsletter", [NewsletterController::class,"submitNewsletterForm"]);
+// Route::post("/subscribe-newsletter", [NewsletterController::class,"submitNewsletterForm"]);
 
-Route::get("/test", function () {
-    return view('test');
-});
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

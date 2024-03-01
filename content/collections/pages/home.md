@@ -5,7 +5,7 @@ title: 'De Twister'
 template: twister
 author: 146f4398-a96c-4451-93ee-7d4d945ec765
 updated_by: 146f4398-a96c-4451-93ee-7d4d945ec765
-updated_at: 1700606289
+updated_at: 1700768482
 hero_title: 'De Twister'
 hero_text: 'Welkom bij de twister, de beste winkel in de regio....'
 button_text: 'Ontdek meer'
@@ -27,8 +27,6 @@ openings_tijden:
 locatie_en_contact:
   - 'Westwijkplein 76 - 78'
   - '1187 LV Amstelveen'
-image_text_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis porttitor lacus ac elementum. Etiam condimentum leo ac orci porttitor, vitae congue leo vehicula. Donec quis venenatis velit. Vestibulum volutpat nisl at accumsan porta. Etiam volutpat malesuada risus et mollis. Morbi scelerisque a magna pretium laoreet.'
-image_text_image: slider-1.jpg
 image_text_image_to_the_right: false
 ---
 De Twister is een kantoorvak-, boek- en speelgoedhandel in Amstelveen, gevestigd in het winkelcentrum Westwijk. Wij staan bekend om onze service, persoonlijke aandacht en exclusieve assortiment met veel bekende merken. Wij helpen u graag op weg met het vinden van een passend boek, een apart cadeau of een leerzaam product voor uw kinderen. Bij ons kunt u verder terecht voor een grote verscheidenheid aan wenskaarten voor alle gelegenheden, cadeaubonnen maar ook loterijen, maar ook voor slingers, verjaardagskaarsjes, ballonnen en PostNL pakketen, met alle toebehoren, kunt u bij ons terecht.

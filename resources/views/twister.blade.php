@@ -23,6 +23,7 @@
     </header>
 </section>
 
+<!-- NOTIFICATION -->  {{-- TODO --}}
 
 <!-- HERO -->
 <section class="heroContainer" data-aos="fade-down" data-aos-duration="500" data-aos-offset="-100000">

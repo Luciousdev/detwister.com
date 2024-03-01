@@ -3,25 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Redirect;
+use App\Mail\ContactFormSend;
+use Illuminate\Support\Facades\Mail;
 
 class ContactformController extends Controller
 {
     public function submitForm(Request $request)
     {
-        try {
-            dd($request);
-            $this->validate($request, [
-                "contactText"=> "required|string",
-                "title"=> "required|string|max:200",
-                "email"=> "required|email",
-                "name"=> "required|string|max:100",
-            ]);
-
-
+        $this->validate($request, [
+            "contactText"=> "required|string",
+            "title"=> "required|string|max:255",
+            "email"=> "required|email",
+            "name"=> "required|string",
+        ]);
 
             $formData = [
                 'contactText' => $request->input('contactText'),
@@ -30,14 +25,13 @@ class ContactformController extends Controller
                 'name' => $request->input('name'),
             ];
 
-
-            // SendEmail::dispatch($formDataEmail)->onQueue('emails');
-            DB::table('contact')->insert($formData);
+        try {
+            Mail::to(env('MAIL_TO_ADDRESS'))->send(new ContactFormSend($formData));
 
             // Success message
             return redirect('/contact')->with('success', 'Verstuurd! Wij doen ons best om zo snel mogelijk te reageren.');
         } catch (\Throwable $th) {
-            return redirect('')->with('error', $th->getMessage());
+            return redirect('/contact')->with('error', 'Er is iets mis gegaan. Probeer het later nog eens.');
         }
     }
 }
