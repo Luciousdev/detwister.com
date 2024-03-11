@@ -5,7 +5,7 @@ title: 'De Twister'
 template: twister
 author: 146f4398-a96c-4451-93ee-7d4d945ec765
 updated_by: 146f4398-a96c-4451-93ee-7d4d945ec765
-updated_at: 1700768482
+updated_at: 1710191140
 hero_title: 'De Twister'
 hero_text: 'Welkom bij de twister, de beste winkel in de regio....'
 button_text: 'Ontdek meer'
