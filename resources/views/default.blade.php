@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col">
                     <div class="cards">
-                        <img class="logo" src="{{ $page->logo }}">
+                        <img class="logo" src="{{ $page->logo }}" style="max-height: 18vh; width:auto;">
                     </div>
                 </div>
             </div>
