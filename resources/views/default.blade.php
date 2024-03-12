@@ -72,9 +72,11 @@
         <div class="mobile">
             <div class="row">
                 <div class="col">
-                    <div class="card-clickable">
-                        <p>{{ $page->kop_deur_links }}</p>
-                    </div>
+                    <a href="/home">
+                        <div class="card-clickable">
+                            <p>{{ $page->kop_deur_links }}</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -86,9 +88,11 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card-clickable">
-                        <p>{{ $page->kop_deur_rechts }}</p>
-                    </div>
+                    <a href="https://libris.nl/winkels/Twister">
+                        <div class="card-clickable">
+                            <p>{{ $page->kop_deur_rechts }}</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
