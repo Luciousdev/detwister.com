@@ -18,15 +18,15 @@ class ContactformController extends Controller
             "name"=> "required|string",
         ]);
 
-            $formData = [
-                'contactText' => $request->input('contactText'),
-                'title' => $request->input('title'),
-                'email' => $request->input('email'),
-                'name' => $request->input('name'),
-            ];
+        $formData = [
+            'contactText' => $request->input('contactText'),
+            'title' => $request->input('title'),
+            'email' => $request->input('email'),
+            'name' => $request->input('name'),
+        ];
 
         try {
-            Mail::to(env('MAIL_TO_ADDRESS'))->send(new ContactFormSend($formData));
+            Mail::to('lucy.puyenbroek@gmail.com')->send(new ContactFormSend($formData));
 
             // Success message
             return redirect('/contact')->with('success', 'Verstuurd! Wij doen ons best om zo snel mogelijk te reageren.');
