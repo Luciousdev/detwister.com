@@ -21,7 +21,7 @@
 
     .door {
         max-height: 64vh;
-        width: 42vw;
+        min-width: 41.7vw;
     }
 }
 
