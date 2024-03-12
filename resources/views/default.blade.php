@@ -87,13 +87,13 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="cards">
-                        <p>Maak een keuze:</p>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="row">--}}
+{{--                <div class="col">--}}
+{{--                    <div class="cards">--}}
+{{--                        <p>Maak een keuze:</p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="row">
                 <div class="col">
                     <a href="https://libris.nl/winkels/Twister">
