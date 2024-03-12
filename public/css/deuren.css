@@ -32,7 +32,6 @@
 
     body {
         background-color: #3C2C8F;
-        overflow-y: hidden;
         overflow-x: hidden;
     }
 
@@ -50,8 +49,8 @@
     }
 
     .cards {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
         background-color: #261c65;
         color: #fff3cd;
         font-weight: bold;
