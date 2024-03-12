@@ -4,8 +4,6 @@ namespace Deployer;
 
 require 'recipe/laravel.php';
 
-before('deploy:prepare', 'deploy:unlock');
-
 set('repository', 'git@github.com:Luciousdev/detwister.com.git');
 
 set('branch', 'main');
@@ -27,7 +25,7 @@ add('writable_dirs', []);
 
 host('100.84.82.70')
     ->set('remote_user','detwister')
-    ->set('deploy_path', '/home/detwister/htdocs/twister.luciousdev.nl')
+    ->set('deploy_path', '/home/luciousdev-detwister/htdocs/detwister.luciousdev.nl')
     ->set('branch', 'main');
 
 // Tasks
