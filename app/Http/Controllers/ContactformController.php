@@ -31,7 +31,7 @@ class ContactformController extends Controller
             // Success message
             return redirect('/contact')->with('success', 'Verstuurd! Wij doen ons best om zo snel mogelijk te reageren.');
         } catch (\Throwable $th) {
-            return redirect('/contact')->with('error', 'Er is iets mis gegaan. Probeer het later nog eens.');
+            return redirect('/contact')->with('error', 'Er is iets mis gegaan. Probeer het later nog eens.\nFoutmelding: '.$th->getMessage());
         }
     }
 }

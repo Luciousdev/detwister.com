@@ -23,11 +23,27 @@
     </header>
 </section>
 
-<!-- NOTIFICATION -->  {{-- TODO --}}
+<!-- NOTIFICATION -->
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+@if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
 
 <!-- HERO -->
-<section class="heroContainer" data-aos="fade-down" data-aos-duration="500" data-aos-offset="-100000">
-    <div class="container-fluid col-xxl-8 px-4 py-5">
+@if(session('success') || session('error'))
+    <section class="heroContainer" data-aos="fade-down" data-aos-duration="500" data-aos-offset="-100000" style="margin-top:0;">
+        <div class="container-fluid col-xxl-8 px-4 py-5" style="margin-top:0;">
+@else
+     <section class="heroContainer" data-aos="fade-down" data-aos-duration="500" data-aos-offset="-100000">
+
+        <div class="container-fluid col-xxl-8 px-4 py-5">
+    @endif
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-up" data-aos-delay="400" data-aos-offset="-100000" data-aos-duration="500">
                 <img src="{{ $page->hero_image }}" class="d-block mx-lg-auto img-fluid" alt="{{ $page->hero_image->alt }}" loading="lazy">
@@ -139,6 +155,7 @@
                             </div>
                         </form>
                     </div>
+                </div>
             </div>
         </section>
     @endif

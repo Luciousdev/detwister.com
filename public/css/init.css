@@ -168,6 +168,11 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
+.alert {
+    margin-top:4.25rem !important;
+    margin-bottom: 0 !important;
+}
+
 .menu.is-active {
   top: 0;
   width: 100%;
