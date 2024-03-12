@@ -48,6 +48,10 @@
         border-radius: 10px;
     }
 
+    .card-clickable:first-child {
+        margin-bottom: 2vh;
+    }
+
     .cards {
         margin-top: 2vh;
         margin-bottom: 2vh;
