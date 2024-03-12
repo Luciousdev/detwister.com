@@ -72,6 +72,14 @@
         <div class="mobile">
             <div class="row">
                 <div class="col">
+                    <div class="cards">
+                        <img class="logo" src="{{ $page->logo }}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
                     <a href="/home">
                         <div class="card-clickable">
                             <p>{{ $page->kop_deur_links }}</p>

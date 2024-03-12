@@ -63,4 +63,9 @@
         align-items: center;
         border-radius: 10px;
     }
+
+    .logo {
+        max-height: 18vh;
+        width: auto;
+    }
 }
