@@ -65,7 +65,7 @@
     }
 
     .logo {
-        max-height: 18vh;
-        width: auto;
+        max-height: 18vh !important;
+        width: auto !important;
     }
 }
