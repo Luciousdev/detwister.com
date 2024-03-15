@@ -16,6 +16,7 @@
         "laravel/tinker": "^2.8",
         "mydnic/laravel-subscribers": "^1.9",
         "statamic/cms": "^4.0",
+        "stichoza/google-translate-php": "^5.1",
         "stoffelio/statamic-404-logger": "^1.0"
     },
     "require-dev": {

@@ -15,6 +15,7 @@ tabs:
             handle: title
             field:
               type: text
+              required: true
               validate:
                 - required
           -
@@ -24,12 +25,24 @@ tabs:
               antlers: false
               type: text
               display: 'Hero Title'
-              icon: text
               listable: hidden
               instructions_position: above
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 75
+          -
+            handle: typer_effect
+            field:
+              default: false
+              type: toggle
+              display: 'typer effect'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 25
           -
             handle: hero_text
             field:
@@ -37,7 +50,6 @@ tabs:
               antlers: false
               type: text
               display: 'Hero Text'
-              icon: text
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -54,7 +66,6 @@ tabs:
               show_set_alt: true
               type: assets
               display: 'Hero Image'
-              icon: assets
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -68,7 +79,6 @@ tabs:
               antlers: false
               type: text
               display: 'Button Text'
-              icon: text
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -108,6 +118,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              validate: 'max:200'
           -
             handle: parent
             field:

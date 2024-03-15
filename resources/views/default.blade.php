@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/js/app.js" defer></script>
     <title>@php if(empty($page->title)){ echo "Geen titel gevonden"; } else { @endphp {{ $page->title }} @php } @endphp</title>
-    <script src="/js/bootstrap.js"></script>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/deuren.css') }}">
 
@@ -72,8 +70,8 @@
         <div class="mobile">
             <div class="row">
                 <div class="col">
-                    <div class="cards">
-                        <img class="logo" src="{{ $page->logo }}" style="max-height: 18vh; width:auto;" alt="Twister logo">
+                    <div class="cards" style="background-color: #f1f1f1;">
+                        <img class="logo" alt="logo" src="{{ $page->logo }}" style="max-height: 18vh; width:auto;">
                     </div>
                 </div>
             </div>
