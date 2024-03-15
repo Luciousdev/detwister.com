@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="/js/app.js" defer></script>
-    <title>@php  if(empty($page->title)){ echo "Geen titel gevonden"; } else { @endphp{{ $page->title }} @php } @endphp</title>
+    <title>@php if(empty($page->title)){ echo "Geen titel gevonden"; } else { @endphp {{ $page->title }} @php } @endphp</title>
     <script src="/js/bootstrap.js"></script>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/deuren.css') }}">
