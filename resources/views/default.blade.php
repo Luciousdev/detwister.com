@@ -34,7 +34,7 @@
         <div class="desktop">
             <div class="row" style="height:18vh; background-color: #B0A48C;">
                 <div class="col d-flex align-items-center justify-content-center">
-                    <img class="logo" src="{{ $page->logo }}">
+                    <img class="logo" alt="Twister logo" src="{{ $page->logo }}">
                 </div>
             </div>
 
