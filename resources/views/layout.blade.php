@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="/js/app.js" defer></script>
-    <title>{{ $page->title }}</title>
+    <title>@php  if(empty($page->title)){ echo "Geen titel gevonden"; } else { @endphp {{ $page->title }} @php } @endphp</title>
     <script src="/js/bootstrap.js"></script>
     <link rel="stylesheet" href="/css/aos.css">
     <script src="/js/aos.js"></script>
@@ -40,7 +40,9 @@
 </body> -->
 
 <body>
+    @php if(empty($page->template_content)){  } else{ @endphp
     {{ $page->template_content }}
+    @php } @endphp
 </body>
 
 <script>

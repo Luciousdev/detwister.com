@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="/js/app.js" defer></script>
-    <title>{{ $page->title }}</title>
+    <title>@php  if(empty($page->title)){ echo "Geen titel gevonden"; } else { @endphp{{ $page->title }} @php } @endphp</title>
     <script src="/js/bootstrap.js"></script>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/deuren.css') }}">
@@ -57,13 +57,13 @@
             <div class="row">
                 <div class="col-5" style="padding:0;">
                     <a href="/home">
-                        <img class="door" src="{{ $page->image_left }}">
+                        <img class="door" src="{{ $page->image_left }}" alt="Linker deur">
                     </a>
                 </div>
                 <div class="col-2"></div>
                 <div class="col-5" style="padding:0;">
                     <a href="https://libris.nl/winkels/Twister">
-                        <img class="door" src="{{ $page->image_right }}">
+                        <img class="door" src="{{ $page->image_right }}" alt="Rechter deur">
                     </a>
                 </div>
             </div>
@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col">
                     <div class="cards">
-                        <img class="logo" src="{{ $page->logo }}" style="max-height: 18vh; width:auto;">
+                        <img class="logo" src="{{ $page->logo }}" style="max-height: 18vh; width:auto;" alt="Twister logo">
                     </div>
                 </div>
             </div>
@@ -87,13 +87,6 @@
                     </a>
                 </div>
             </div>
-{{--            <div class="row">--}}
-{{--                <div class="col">--}}
-{{--                    <div class="cards">--}}
-{{--                        <p>Maak een keuze:</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
             <div class="row">
                 <div class="col">
                     <a href="https://libris.nl/winkels/Twister">

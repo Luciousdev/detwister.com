@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="lc-block mb-3">
-                    <div editable="rich">
+                    <div>
                         <p class="lead">
                             {{ $page->hero_text }}<br>
                             <span id='typer'></span>
