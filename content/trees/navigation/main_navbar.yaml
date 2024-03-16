@@ -12,3 +12,7 @@ tree:
   -
     id: 5e09f516-5586-40c0-a4a9-b0394ac0119d
     entry: ad7aa43b-c0a0-4a3e-8712-ad853aa0e744
+  -
+    id: 89484b1b-f8fe-4f3b-8eda-8f96ae63be31
+    title: Startpagina
+    url: /
