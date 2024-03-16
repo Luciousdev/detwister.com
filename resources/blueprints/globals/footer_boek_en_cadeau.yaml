@@ -1,0 +1,49 @@
+tabs:
+  main:
+    display: 'De Twister'
+    sections:
+      -
+        fields:
+          -
+            handle: openings_tijden
+            field:
+              type: list
+              display: 'Openings Tijden'
+              instructions: 'Openingstijden van de winkel'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: locatie_en_contact
+            field:
+              type: list
+              display: 'Locatie en Contact'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: instagram_link
+            field:
+              type: link
+              display: 'Instagram Link'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: facebook_link
+            field:
+              type: link
+              display: 'Facebook Link'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

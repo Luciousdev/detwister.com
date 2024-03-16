@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-2"></div>
                 <div class="col-5" style="padding:0;">
-                    <a href="https://libris.nl/winkels/Twister">
+                    <a href="/boek-cadeau">
                         <img class="door" src="{{ $page->image_right }}" alt="Rechter deur">
                     </a>
                 </div>
@@ -87,7 +87,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <a href="https://libris.nl/winkels/Twister">
+                    <a href="/boek-cadeau">
                         <div class="card-clickable">
                             <p>{{ $page->kop_deur_rechts }}</p>
                         </div>

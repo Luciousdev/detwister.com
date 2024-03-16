@@ -1,0 +1,138 @@
+title: 'Boek en Cadeau'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: hero_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Hero Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 75
+          -
+            handle: typer_effect
+            field:
+              default: false
+              type: toggle
+              display: 'typer effect'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 25
+          -
+            handle: hero_text
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Hero Text'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: hero_image
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Hero Image'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              max_files: 1
+          -
+            handle: button_text
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Button Text'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  text_field:
+    display: 'Text Field'
+    sections:
+      -
+        display: 'Nieuwe sectie'
+        fields:
+          -
+            import: text_content
+  image_carousel:
+    display: 'Image Carousel'
+    sections:
+      -
+        display: 'Nieuwe sectie'
+        fields:
+          -
+            import: image_carousel
+  contact_form:
+    display: 'Contact Form'
+    sections:
+      -
+        display: 'Nieuwe sectie'
+        fields:
+          -
+            import: contact_form
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+  image_text:
+    display: 'Image Text'
+    sections:
+      -
+        display: 'Nieuwe sectie'
+        fields:
+          -
+            import: image-text
