@@ -493,6 +493,11 @@ p {
   color: white;
 }
 
+.socialsLogo {
+    width: 2rem;
+    height: auto;
+}
+
 @media screen and (max-width: 800px) {
   .openingsTijden {
     padding-top: 4vh;

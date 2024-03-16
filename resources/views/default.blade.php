@@ -32,20 +32,20 @@
 <body>
     <div class="container-fluid">
         <div class="desktop">
-            <div class="row" style="height:18vh; background-color: #B0A48C;">
+            <div class="row" style="height:18vh; background-color: #d0d0d0;">
                 <div class="col d-flex align-items-center justify-content-center">
                     <img class="logo" alt="Twister logo" src="{{ $page->logo }}">
                 </div>
             </div>
 
             <div class="row" style="height:18vh;">
-                <div class="col-5 d-flex align-items-center justify-content-center" style="background-color: #B0A48C;">
+                <div class="col-5 d-flex align-items-center justify-content-center" style="background-color: #d0d0d0;">
                     <div class="text-center titles">
                         <p>{{ $page->kop_deur_links }}</p>
                     </div>
                 </div>
                 <div class="col-2"></div>
-                <div class="col-5 d-flex align-items-center justify-content-center" style="background-color: #B0A48C;">
+                <div class="col-5 d-flex align-items-center justify-content-center" style="background-color: #d0d0d0;">
                     <div class="text-center titles">
                         <p>{{ $page->kop_deur_rechts }}</p>
                     </div>

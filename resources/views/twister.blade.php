@@ -219,6 +219,12 @@
                 <li><a href="mailto:de.twister@planet.nl">de.twister@planet.nl</a></li>
             </ul>
         </div>
+        <div class="col-md text-center my-auto socials">
+            <h3>Socials:</h3>
+            <ul>
+                <li><a href="{{ $footer->instagram_link }}" target="_blank"><img class="socialsLogo" src="/assets/logos/instagram.png"></a> <a href="{{ $footer->facebook_link }}" target="_blank"><img class="socialsLogo" src="/assets/logos/facebook.png"></a></li>
+            </ul>
+        </div>
         <div class="col-md text-center my-auto openingsTijden">
             <h3>Openingstijden:</h3>
             <ul>
