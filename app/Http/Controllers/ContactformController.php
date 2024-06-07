@@ -26,7 +26,7 @@ class ContactformController extends Controller
         ];
 
         try {
-            Mail::to('lucy.puyenbroek@gmail.com')->send(new ContactFormSend($formData));
+            Mail::to(env('MAIL_TO_ADDRESS'))->send(new ContactFormSend($formData));
 
             // Success message
             return redirect('/contact')->with('success', 'Verstuurd! Wij doen ons best om zo snel mogelijk te reageren.');
