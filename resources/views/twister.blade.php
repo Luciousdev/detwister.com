@@ -17,6 +17,7 @@
                         <li class="menu-item"><a class="menu-link" href="{{ $entry['url']->value() }}">{{ $entry['title']->value() }}</a></li>
                         {{-- @endif --}}
                     @endforeach
+                    <li class="menu-item"><div id="google_translate_element"></div></li>
                 </ul>
             </div>
         </nav>
@@ -252,3 +253,35 @@
         loop: true
     });
 </script>
+        <script type="text/javascript">
+            // Load Google Translate API manually
+            function loadGoogleTranslateScript() {
+                var script = document.createElement('script');
+                script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+                script.async = true;
+                document.head.appendChild(script);
+            }
+
+            // Initialize translation only for the content div
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'nl',
+                    includedLanguages: 'en,es,fr,de,it,no,pt,sv,da,ae,po,jp,uk',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                    autoDisplay: false
+                }, 'google_translate_element');
+            }
+
+            // Hide the Google Translate toolbar that may appear
+            function hideGoogleTranslateBar() {
+                var style = document.createElement('style');
+                style.innerHTML = '.VIpgJd-ZVi9od-ORHb { display: none !important; }';
+                document.head.appendChild(style);
+            }
+
+            // Call loadGoogleTranslateScript to load Google Translate API
+            loadGoogleTranslateScript();
+
+            // Hide the toolbar after a short delay
+            hideGoogleTranslateBar()
+        </script>

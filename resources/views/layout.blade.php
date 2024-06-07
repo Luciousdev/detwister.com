@@ -32,6 +32,12 @@
     <meta property="twitter:title" content="De Twister" />
     <meta property="twitter:description" content="Welkom bij de twister! De beste kantoorvak-, boek- en speelgoedhandel in Amstelveen (Westwijk). Van postpunten zoals DHL en PostNL naar speelgoed, wij hebben het allemaal." />
     <meta property="twitter:image" content="https://examples.luciousdev.nl/images/mikalinuxlogo.png" />
+
+    <style>
+        .VIpgJd-ZVi9od-ORHb {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <!-- <body class="bg-gray-100 font-sans leading-normal text-gray-800">
